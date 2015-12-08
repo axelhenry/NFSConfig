@@ -1,0 +1,9 @@
+[Unit]
+Description=Check the network mounts every 60seconds
+After=syslog.target network.target
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,7 @@
+[Unit]
+Description=Check the network mount
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/auto_share.sh
