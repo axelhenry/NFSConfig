@@ -273,6 +273,6 @@ sudo wget -p /etc/systemd/system/ http://github.com/axelhenry/NFSConfig/raw/mast
 sudo systemctl enable auto_share.timer
 ```
 
-1. Redémarrer votre raspberry et faites des tests, les partages devraient apparaître quand votre serveur physique est en ligne.
+1. Redémarrer votre raspberry et faire des tests, les partages devraient apparaître quand votre serveur physique est en ligne.
 
 1. GG
