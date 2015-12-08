@@ -47,7 +47,7 @@ yaourt -S unfs3 --force
    sudo modprobe vmhgfs
    ```
 
-1. Activer le module au démarrage :
+1. Activer le [module](https://wiki.archlinux.org/index.php/VMware/Installing_Arch_as_a_guest#Shared_Folders) au démarrage :
 
    ```sh
    sudo nano /etc/mkinitcpio.conf
