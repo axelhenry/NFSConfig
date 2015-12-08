@@ -219,7 +219,7 @@ Sauvegarder via ctrl + x
 
 1. Télécharger le script auto_share.sh :
 ```sh
-sudo wget -p /usr/local/bin http://raw.github.com/axelhenry/NFSConfig/files/auto_share.sh
+sudo wget -p /usr/local/bin http://raw.github.com/axelhenry/NFSConfig/raw/master/files/auto_share.sh
 ```
 
 1. Rendre ce script exécutable
@@ -228,12 +228,12 @@ sudo chmod +x /usr/local/bin/auto_share.sh
 ```
 1. Télécharger le timer auto_share.timer :
 ```sh
-sudo wget -p /etc/systemd/system/ http://raw.github.com/axelhenry/NFSConfig/files/auto_share.timer
+sudo wget -p /etc/systemd/system/ http://raw.github.com/axelhenry/NFSConfig/raw/master/files/auto_share.timer
 ```
 
 1. Télécharger le service auto_share.service :
 ```sh
-sudo wget -p /etc/systemd/system/ http://raw.github.com/axelhenry/NFSConfig/files/auto_share.service
+sudo wget -p /etc/systemd/system/ http://github.com/axelhenry/NFSConfig/raw/master/files/auto_share.service
 ```
 
 1. Lancer le service au démarrage
