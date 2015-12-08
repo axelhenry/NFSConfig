@@ -41,6 +41,30 @@ yaourt -S nfs-utils open-vm-tools open-vm-tools-dkms
 yaourt -S unfs3 --force
 ```
 
+1. Charger le [module](https://wiki.archlinux.org/index.php/VMware/Installing_Arch_as_a_guest#Shared_Folders) :
+
+   ```sh
+   sudo modprobe vmhgfs
+   ```
+
+1. Activer le module au démarrage :
+
+   ```sh
+   sudo nano /etc/mkinitcpio.conf
+   ```
+
+   Ajouter vmhgfs à vos modules :
+   ```
+   ...
+   MODULES="... vmhgfs"
+   ...
+   ```
+   Mettre à jour votre ramdisk :
+   ```sh
+   sudo mkinitcpio -p linux
+   ```
+
+
 1. Eteindre votre machine virtuelle, activer les dossiers partagés et ajouter les dossiers que vous voulez mettre à disposition de votre machine virtuelle.
 
 1. Redémarrer votre machine virtuelle.
